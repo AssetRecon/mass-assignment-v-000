@@ -5,9 +5,9 @@ class Person
 
 jim_attributes = {name: "jim", birthday: "today"}
 
-  def initialize(jim_attributes)
-    jim_attributes.each {|key, value| self.send(("#{key}="),value)}
-    end
+  def initialize(attributes)
+    attributes.each {|key, value| self.send(("#{key}="),value)}
+  end
 
 
 
